@@ -1,3 +1,36 @@
+/* Heart Animation */
+@keyframes heartfade {
+    0% {
+        opacity : 0.8;
+    }
+    50% {
+        opacity : 0;
+    }
+}
+.heart {
+    z-index : 999;
+    animation : heartfade 6s linear;
+    position : absolute;
+}
+.heart:before, .heart:after {
+    content : "";
+    background-color : #fc2a62;
+    position : absolute;
+    height : 20px;
+    width : 35px;
+    border-radius : 15px 0px 0px 15px;
+}
+
+.heart:before {
+    transform : rotate(45deg);
+}
+
+.heart:after {
+    left : 10.5px;
+    transform : rotate(135deg);
+}
+
+/* Footer style*/
 .logo-img{
     width: 50px;
     margin-right: 15px;

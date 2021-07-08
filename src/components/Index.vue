@@ -51,11 +51,14 @@
 
         <footer class="tm-footer">
             <div class="tm-social-icons-container text-xs-center">
+<!--            <div class="tm-social-icons-container">-->
                 <a href="#" class="tm-social-link"><i class="fa fa-facebook"></i></a>
                 <a href="mailto:quoc.cuong.yb.dhtb@gmail.com" class="tm-social-link"><i class="fa fa-google"></i></a>
                 <a href="#" class="tm-social-link"><i class="fa fa-twitter"></i></a>
-                <a href="https://github.com/QuocCuong0701" target="_blank" class="tm-social-link"><i class="fa fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/pqcuong" target="_blank" class="tm-social-link"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/QuocCuong0701" target="_blank" class="tm-social-link"><i
+                        class="fa fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/pquoccuong" target="_blank" class="tm-social-link"><i
+                        class="fa fa-linkedin"></i></a>
             </div>
             <p class="tm-copyright-text">Made with
                 <img alt="heart" height="20" width="20"
@@ -110,9 +113,7 @@
     }
 
     function adjustHeightOfPage(pageNo) {
-
         var pageContentHeight = 0;
-
         var pageType = $('div[data-page-no="' + pageNo + '"]').data("page-type");
 
         if (pageType !== undefined && pageType === "gallery") {
@@ -137,40 +138,15 @@
     /*
         Everything is loaded including images.
     */
-    // $(window).load(function () {
     $(window).on('load', function () {
-
         adjustHeightOfPage(1); // Adjust page height
-
         /* Gallery One pop up
         -----------------------------------------*/
-        // $(document).ready(function ($) {
         $('.gallery-one').magnificPopup({
             delegate: 'a', // child items selector, by clicking on it popup will open
             type: 'image',
             gallery: {enabled: true}
         });
-        // });
-
-        /* Gallery Two pop up
-        -----------------------------------------*/
-        /*$(document).ready(function ($) {
-        $('.gallery-two').magnificPopup({
-            delegate: 'a',
-            type: 'image',
-            gallery: {enabled: true}
-        });
-        });*/
-
-        /* Gallery Three pop up
-        -----------------------------------------*/
-        /*$(document).ready(function ($) {
-        $('.gallery-three').magnificPopup({
-            delegate: 'a',
-            type: 'image',
-            gallery: {enabled: true}
-        });
-        });*/
 
         /* Collapse menu after click
         -----------------------------------------*/
@@ -193,10 +169,8 @@
 
         // Remove preloader (https://ihatetomatoes.net/create-custom-preloading-screen/)
         $('body').addClass('loaded');
-
         // Write current year in copyright text.
         $(".tm-copyright-year").text(new Date().getFullYear());
-
     });
 
     /* Google map
@@ -213,7 +187,6 @@
         };
 
         map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
-
         google.maps.event.addDomListener(map, 'idle', function () {
             calculateCenter();
         });
@@ -226,18 +199,6 @@
     function calculateCenter() {
         center = map.getCenter();
     }
-
-    /*function loadGoogleMap() {
-        var script = document.createElement('script');
-        script.type = 'text/javascript';
-        script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' + 'callback=initialize';
-        document.body.appendChild(script);
-    }*/
-
-    // DOM is ready
-    /*$(function () {
-        loadGoogleMap(); // Google Map
-    });*/
 </script>
 
 <style scoped>

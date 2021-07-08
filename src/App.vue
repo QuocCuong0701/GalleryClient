@@ -1,18 +1,15 @@
 <template>
     <div id="app">
         <Index/>
-        <LoaderWrapper/>
     </div>
 </template>
 
 <script>
-    import Index from '@/components/Index.vue'
-    import LoaderWrapper from "@/components/LoaderWrapper";
+    import Index from '@/components/Index.vue';
 
     export default {
         name: 'App',
         components: {
-            LoaderWrapper,
             Index
         }
     }
