@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
+// eslint-disable-next-line no-unused-vars
 import {heartFade} from '@/assets/js/custom.js'
 
 Vue.config.productionTip = false;
@@ -7,11 +8,8 @@ Vue.config.productionTip = false;
 const app = new Vue({
     render: h => h(App)
 });
-Vue.use(heartFade);
 app.$mount('#app');
 
-// var brd = document.createElement("DIV");
-/*
 var brd = document.getElementById('app');
 document.body.insertBefore(brd, document.getElementById("board"));
 
@@ -78,4 +76,4 @@ function check() {
         var bound = 30 + Math.random() * 20;
         generateHeart(event.pageX - brd.offsetLeft + cursorXOffset, event.pageY - brd.offsetTop + cursorYOffset, bound, start, scale);
     }
-}*/
+}
