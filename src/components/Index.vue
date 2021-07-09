@@ -62,9 +62,8 @@
     import 'tether';
     import axios from "axios";
     import google from 'google-maps';
-
-    const serverDomain = "https://galleryservice.herokuapp.com/";
-    // const serverDomain = "https://girls-gallery.herokuapp.com/";
+    
+    const serverDomain = "https://girls-gallery.herokuapp.com/";
     // const serverDomain = "http://localhost:8888";
 
     export default {
