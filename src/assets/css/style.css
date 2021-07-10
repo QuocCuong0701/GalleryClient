@@ -1,37 +1,39 @@
 /* Heart Animation */
 @keyframes heartfade {
     0% {
-        opacity : 1;
+        opacity: 1;
     }
     50% {
-        opacity : 0;
+        opacity: 0;
     }
 }
+
 .heart {
-    z-index : 1002;
-    animation : heartfade 7s linear;
-    position : absolute;
+    z-index: 1002;
+    animation: heartfade 7s linear;
+    position: absolute;
 }
+
 .heart:before, .heart:after {
-    content : "";
-    background-color : #fc2a62;
-    position : absolute;
-    height : 20px;
-    width : 35px;
-    border-radius : 15px 0 0 15px;
+    content: "";
+    background-color: #fc2a62;
+    position: absolute;
+    height: 20px;
+    width: 35px;
+    border-radius: 15px 0 0 15px;
 }
 
 .heart:before {
-    transform : rotate(45deg);
+    transform: rotate(45deg);
 }
 
 .heart:after {
-    left : 10.5px;
-    transform : rotate(135deg);
+    left: 10.5px;
+    transform: rotate(135deg);
 }
 
 /* Footer style*/
-.logo-img{
+.logo-img {
     width: 50px;
     margin-right: 15px;
 }
@@ -70,6 +72,14 @@
 }
 
 /* Other */
-.tm-social-icons-container a{
+.tm-social-icons-container a {
     border-radius: 50%;
+}
+
+.tm-navbar-bg, .tm-footer {
+    background-color: #ffa2b2;
+}
+
+.js-tm-page-content {
+    background-color: #fddee3;
 }

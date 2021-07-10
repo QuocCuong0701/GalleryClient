@@ -1,7 +1,5 @@
 import Vue from 'vue'
 import App from './App.vue'
-// eslint-disable-next-line no-unused-vars
-import {heartFade} from '@/assets/js/custom.js'
 
 Vue.config.productionTip = false;
 
