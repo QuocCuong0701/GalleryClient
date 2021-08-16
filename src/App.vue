@@ -6,11 +6,13 @@
 
 <script>
     import Index from '@/components/Index.vue';
+    import Upload from '@/components/Upload.vue'
 
     export default {
         name: 'App',
         components: {
-            Index
+            Index,
+            Upload
         }
     }
 </script>
@@ -23,6 +25,8 @@
     @import "assets/css/style.css";
     @import "assets/Font-Awesome-4.7/css/font-awesome.min.css";
     @import "//fonts.googleapis.com/css?family=Open+Sans: 300,400,600";
+
+    @import "assets/css/upload-style.css";
 
     #app {
         font-family: Avenir, Helvetica, Arial, sans-serif;

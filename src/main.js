@@ -1,14 +1,31 @@
 import Vue from 'vue'
-import App from './App.vue'
+import App from '@/App.vue'
+import VueRouter from 'vue-router'
+import Upload from '@/components/Upload.vue'
 
 Vue.config.productionTip = false;
 
+Vue.use(VueRouter);
+const routes = [
+    {
+        path: "/upload",
+        name: 'Upload',
+        component: Upload
+    }
+];
+
+const router = new VueRouter({
+    routes
+});
+
 const app = new Vue({
-    render: h => h(App)
+    render: h => h(App),
+    router
 });
 app.$mount('#app');
 
-var brd = document.getElementById('app');
+// Heart animation
+/*var brd = document.getElementById('app');
 document.body.insertBefore(brd, document.getElementById("board"));
 
 const duration = 5000;
@@ -74,4 +91,5 @@ function check() {
         var bound = 30 + Math.random() * 20;
         generateHeart(event.pageX - brd.offsetLeft + cursorXOffset, event.pageY - brd.offsetTop + cursorYOffset, bound, start, scale);
     }
-}
+}*/
+// End heart animation
