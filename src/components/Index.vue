@@ -89,8 +89,8 @@
             return {
                 files: [],
                 errors: [],
-                // clientDomain: "https://girlgallery.herokuapp.com/"
-                clientDomain: "http://localhost:8000"
+                clientDomain: "https://girlgallery.herokuapp.com/"
+                // clientDomain: "http://localhost:8000/"
             }
         },
         created() {
