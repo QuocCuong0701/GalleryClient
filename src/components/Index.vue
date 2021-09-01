@@ -174,32 +174,7 @@
         }, 5000);
     });
 
-    /* Google map
-    ------------------------------------------------*/
-    var map = '';
-    var center;
 
-    // eslint-disable-next-line no-unused-vars
-    function initialize() {
-        var mapOptions = {
-            zoom: 13,
-            center: new google.maps.LatLng(37.779724, -122.452152),
-            scrollwheel: false
-        };
-
-        map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
-        google.maps.event.addDomListener(map, 'idle', function () {
-            calculateCenter();
-        });
-
-        google.maps.event.addDomListener(window, 'resize', function () {
-            map.setCenter(center);
-        });
-    }
-
-    function calculateCenter() {
-        center = map.getCenter();
-    }
 </script>
 
 <style scoped>
